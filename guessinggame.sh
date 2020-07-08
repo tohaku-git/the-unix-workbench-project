@@ -3,7 +3,7 @@ file_num=$(ls -1 | wc -l)
 function response {
 	if [[ $1 =~ [^0-9] ]]
 	then
-		echo "You entered: $1, that is not an integer. Please enter an integer."
+		echo "You entered: $1, that is not a natural number. Please enter a natural number."
 	elif [[ $1 -eq $2 ]]
 	then
 		echo "You entered: $1, that is equal to the actual number of files. You have completed this game. Congratulations!"
